@@ -1,0 +1,592 @@
+/* Dcrazed style */
+.headline{text-align:center;margin:20px 0 75px}
+.headline img{display:block;margin:0 auto 20px}
+.headline > h6{display:inline-block;width:20px;border-bottom:3px solid #e33000;margin-bottom:-11px;padding:0}
+.headline h1{display:inline-block;border-bottom:1px solid #d0d0d0;line-height:40px;font-weight:300;text-transform:uppercase;margin:0 -3px;padding:0 12px}
+.headline h1 h6{color:#e33000;padding:0}
+h6{color:#e33000}
+h2{margin-bottom:10px;font-size:22px;line-height:40px}
+/* Dcrazed style ends */
+
+            
+/*
+Author: DavieB
+*/
+		body{
+			background:#f1f2f3;
+			font-size:62.5%;
+			padding:0;
+			margin:0;
+			font-family: 'Open Sans', sans-serif;
+    }
+		*{
+			box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+  form > div {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  max-width:600px;
+  padding-bottom: 10px;
+  
+}
+form input {
+  width: 100%;
+  max-width:600px;
+  border: 2px solid gray;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 12px;
+  outline: 0;
+}
+form input:valid{
+  background: white;
+}
+form input:focus{
+  border-color:#ce1446;
+}
+form input:focus + label{
+	background:#ce1446;
+  color: white;
+  font-size: 1em;
+  padding: 1px 6px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+form label {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  font-size:1em;
+  position: absolute;
+  color: #999;
+  padding: 7px 6px;
+}
+form textarea {
+  display: block;
+  resize: vertical;
+}
+
+form.go-right label {
+  top: 1px;
+  right: 100%;
+  width: 100%;
+  margin-right: -100%;
+  bottom: 11px;
+  border-bottom-right-radius:3px;
+  border-top-right-radius:3px;
+}
+form.go-right input:focus + label, form.go-right textarea:focus + label {
+  right: 0;
+  margin-right: 0;
+  width: 40%;
+  padding-top: 5px;
+}
+		img{
+			max-width: 100%;
+		}
+		#wrap{
+			width:80%;
+			margin:20px auto;
+			background:#FFF;
+		}
+		.column{
+		  width:60%;
+			float:left;
+			margin-right:2%;
+			border-radius:10px;
+			background:#fff;
+		}
+		.column2
+		{
+			width: 60%;
+			margin-top: -15px;
+		}
+		.column3{
+			width: 30%;
+			margin-right:0;
+			margin-left:0;
+		}
+		.number{
+			width:50px;
+			height:50px;
+			background:#ce1446;
+			color:#FFF;
+			font-size:27px;
+			text-align: center;
+			border-radius:50%;
+			float:left;
+			padding-top:5px;
+			margin-left:10px;
+		}
+		.myicon
+		{
+			margin-left: 17px;
+			margin-top: 8px;
+			
+		}
+		.step {
+			width: 100%;
+			height: auto;
+			color: #ce1446;
+			padding-left: 1%;
+			padding-top: 20px;
+			float: left;
+			position: relative;
+			  
+		}
+		.step:after{
+			content:'';
+			width:80%;
+			height:3px;
+			background:#ce1446;
+			position:absolute;
+			bottom:0;
+			right:0;
+			border-top-left-radius:10px;
+			border-bottom-left-radius:10px;
+		}
+		.title{
+			float:left;
+			width:70%;
+			margin-left:3%;
+			font-size:1.2em;
+			font-weight:300;
+			margin-top:-5px;
+		}
+		.title h1{
+			font-weight:300;
+		}
+		.content{
+			padding:2em 2em;
+			width:100%;
+			margin:0 auto;
+			height:auto;
+			display:block;
+			float:left;
+		}
+		.content label{
+			font-size:1.5em;
+		}
+		.content input{
+			width:100%;
+			padding:10px 10px;
+			border:1px solid #ccc;
+			border-radius:3px;
+			display:inline-block;
+			font-size: 15px;
+		}
+		.content button{
+			display:block;
+			float:none;
+			margin:5px auto;
+			background:#ce1446;
+			width:200px;
+			border:0;
+			padding:5px 15px;
+			font-size:1.6em;
+			color:#FFF;
+			border-bottom:3px solid #ce1446;
+			border-radius:2px;
+			clear:both;
+		}
+		.content .continue{
+			display:block;
+			float:none;
+			background:#ce1446;
+			width:200px;
+			border:0;
+			padding:5px 15px;
+			font-size:1.6em;
+			color:#FFF;
+			border-bottom:3px solid #ce1446;
+			border-radius:2px;
+			clear:both;
+			text-align:center;
+			text-decoration: none;
+			margin:15px auto;
+		}
+		#payment,
+		#email{
+			
+			padding-bottom:1em;
+    }
+		.select{
+  			width: 100%;
+       max-width:600px;
+  			height: 35px;
+  			overflow: hidden;
+  			border: 1px solid #ccc;
+  			border-radius: 2px;
+  			display: inline-block;
+  			margin-top:5px; 
+  		}
+  	.state_options select,
+		.country_options select{
+  			background: transparent;
+  			display:inline-block;
+  			width:100%;
+  			padding: 5px;
+  			font-size: 15px;
+  			line-height: 1;
+  			border: 0;
+  			border-radius:0;
+  			height: 40px;
+  			color:gray;
+		}
+   #address .state_options label,
+	 #address .country_options label.country{
+      right: 0;
+      margin-right: 0;
+      width: 10%;
+      top:5px;
+      bottom:14px;
+      background:#ce1446;
+      color: white;
+      font-size: 1em;
+      padding: 4px 6px;
+      z-index: 2;
+      text-transform: uppercase;
+    }
+    #address input[type="checkbox"]{
+			width:10%;
+			float:left;
+		}
+		#address label.same,
+    #address form input:focus + label.same{
+			width:85%;
+			float:left;
+			margin-left:0;
+			display:block;
+			font-size:1.3em;
+     padding:0;
+			margin-bottom:15px;
+     top:3px;
+     right: 100%;
+     margin-right:-100%;
+     bottom: 0;
+     background:transparent;
+     color:initial;
+     text-transform:uppercase;
+     border-bottom-right-radius: 3px;
+     border-top-right-radius: 3px;
+		}
+		#payment input[type="radio"],
+   #payment input[type="radio"]:focus{
+			width:30px;
+		}
+    #payment label{
+      padding:0;
+      font-size:14px;
+      color: #fff;
+      font-weight: bold;
+    }
+		#payment.price{
+			display:inline-block;
+		}
+		.shipping
+		{
+			margin-left: 17%;
+		}
+    #payment .expiry{
+      margin-top:7px;
+    }
+		#payment label.exp_date{
+		  right: 0;
+      margin-right: 0;
+      width: 40%;
+      top:7px;
+     
+      background:#ce1446;
+      color: white;
+      font-size: 1em;
+      padding: 4px 6px;
+      z-index: 2;
+      text-transform: uppercase;
+		}
+		#payment .month_select,
+		#payment .year_select{
+  			width: 38%;
+  			height: 40px;
+       font-size:.em;
+  			overflow: hidden;
+  			border: 1px solid #ccc;
+  			border-radius: 2px;
+  			display: inline-block;
+		}
+		.month_select select,
+		.year_select select{
+  			background: transparent;
+  			display:inline-block;
+  			width: 220px;
+  			padding: 5px;
+  			font-size: 1.5em;
+  			line-height: 1;
+  			border: 0;
+  			border-radius:0;
+  			height: 40px;
+		}
+		#payment .sec_num,
+		#payment .expiry{
+			display:block;
+			float:left;
+		}
+		#payment .sec_num{
+			width:100%;
+			margin-top:5px;
+     margin-bottom:15px;
+		}
+	.left{
+			width:100%;
+			float:left;
+		}
+		.accepted{
+			width:35%;
+			padding-right:1em;
+			padding-left:1em;
+			margin-top:80px;
+		}
+ 		.accepted span{
+			display: table-cell;
+			padding:3px;
+		}
+		.secured {
+			margin-top:5px;
+			padding-left:1em;
+			padding-right:1em;
+		}
+		.secured .lock{
+			float:left;
+			padding:3px;
+			width:25%;
+			margin-top:10px;
+		}
+ 		.secured .security{
+			float:left;
+			margin-right:5px;
+			font-style: italic;
+			color:#aaa;
+			width:70%;
+			margin-bottom:20px;px;
+		}
+		.products{
+			width:100%;
+			float:left;
+			padding-bottom:3px;
+			border-bottom:3px solid #aaa;
+		}
+		.products .product_image{
+			width:20%;
+			float:left;
+			margin-left: 10%;
+		}
+		.products .product_details{
+			width:70%;
+			display: table;
+			vertical-align: middle;
+		}
+		.products .product_details span{
+			display:table-cell;
+			vertical-align: middle;
+			margin-top:30%;
+			font-size: 1.5em;
+			color:#aaa;
+		}
+		.totals{
+			width:100%;
+			float:left;
+			border-bottom:3px solid #aaa;
+			padding-bottom:5px;
+		}
+		.totals .subtitle{
+			font-size:2em;
+			display:block;
+			text-align: right;
+			color:#aaa;
+			width:95%;
+			margin-right:5%;
+		}
+		.totals .subtitle .sub_price{
+			font-style:italic;
+			width:100px;
+		}
+		.final{
+			width:100%;
+			float:left;
+			font-size:2.2em;
+			text-align: right;
+			color:#888;
+		}
+		.final .title{
+			width:95%;
+			margin-right:5%;
+			font-weight:bold;
+			margin-top:5px;
+		}
+		#reviewed .title{
+			width:49%;
+			font-size:1.8em;
+			float:left;
+		}
+		#reviewed .billing{
+			width:100%;
+			float:left;
+			margin-bottom:5px;
+			margin-top:20px;
+		}
+		#reviewed .billing .address_reviewed,
+		#reviewed .payment .address_reviewed,
+		#reviewed .payment .payment_reviewed{
+			color:#aaa;
+			font-size:1.2em;
+			height:80px;
+			width:48%;
+			float:left;
+		}
+		#reviewed .billing .address_reviewed span{
+			display:block;
+		}
+		span.method{
+			display:block;
+		}
+		#reviewed #complete{
+			float:left;
+			width:100%;
+			padding-top:5px;
+			border-top:1px dotted #aaa;
+		}
+		#reviewed .big_button{
+			clear:both;
+			display:block;
+			width:70%;
+			margin:0 auto;
+			padding-top:15px;
+			padding-bottom:10px;
+			color:#fff;
+			font-size:2em;
+			text-decoration: none;
+			background:#ce1446;
+			text-align:center;
+			border-bottom: 3px solid #ce1446;
+			border-radius: 2px;
+			margin-bottom:20px;
+			margin-top:20px;
+		}
+		#reviewed #complete .sub{
+			color:#aaa;
+			display:block;
+			text-align:center;
+			margin-top:15px;
+			width:80%;
+			margin:5px auto;
+		}
+@media(max-width:768px){
+  .column{
+    width:49%;
+  }
+  .column2{
+    margin-right:0;
+  }
+  .column3{
+    width:100%;
+    margin-top:30px;
+}
+@media(max-width:600px){
+	.accepted
+	{
+		display: none;
+	}
+  .column{
+    width:100%;
+    margin:0;
+    margin-top:30px;
+}
+.column3{
+    width:100%;
+    margin:0;
+    margin-top:600px;
+}
+.column2{
+    width:100%;
+    margin:0;
+    margin-top:-1030px;
+}
+#payment label.exp_date
+{
+	bottom: 13px;
+	width: 20%;
+}
+#payment label
+{
+	font-size: 13px;
+}
+.myicon
+		{
+			margin-left: 2px;
+			margin-top: 8px;
+			
+		}
+
+}
+
+  form > div {
+  position: relative;
+  overflow: hidden;
+  width:100%;
+  max-width:320px;
+  
+}
+form input, form textarea {
+  width: 100%;
+  max-width:320px;
+  border: 2px solid gray;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 8px 12px;
+  outline: 0;
+}
+form input:valid, form textarea:valid {
+  background: white;
+}
+form input:focus, form textarea:focus {
+  border-color: #f06d06;
+}
+form input:focus + label, form textarea:focus + label {
+	background:#ce1446;
+  color: white;
+  font-size: 70%;
+  padding: 1px 6px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+form label {
+  transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.2s, right 0.2s, left 0.2s;
+  position: absolute;
+  color: #999;
+  padding: 7px 6px;
+}
+form textarea {
+  display: block;
+  resize: vertical;
+}
+
+form.go-right label {
+  top: 2px;
+  right: 100%;
+  width: 100%;
+  margin-right: -100%;
+  bottom: 2px;
+  border-bottom-right-radius:3px;
+  border-top-right-radius:3px;
+}
+form.go-right input:focus + label, form.go-right textarea:focus + label {
+  right: 0;
+  margin-right: 0;
+  width: 40%;
+  padding-top: 5px;
+}
